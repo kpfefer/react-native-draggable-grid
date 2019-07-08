@@ -398,7 +398,7 @@ export class DraggableGrid<DataType extends IBaseItemType> extends React.Compone
       this.items[itemIndex].currentPosition,
       {
         toValue:this.blockPositions[this.orderMap[itemKey].order],
-        duration:200,
+        duration:0,
       }
     ).start();
   }
