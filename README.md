@@ -132,6 +132,21 @@ const styles = StyleSheet.create({
 | onItemPress | (item) => void | no      | Function will execute when item on press |
 | onDragStart | (startDragItem) => void | no | Function will execute when item start drag |
 | onDragRelease | (data) => void | no | Function will execute when item release, and will return the new ordered data |
+| onResetSort | (data) => void | no | Function will execute when dragged item change sort |
+
+## Item Props
+
+| parameter  | type   | required | description |
+| :--------  | :----  | :------- | :---------- |
+| disabledDrag | boolean | no      | It will disable drag for the item |
+| disabledReSorted | boolean | no | It will disable resort the item |
+
+if you set disabledResorted be true, it will look like that
+
+<p align="center">
+  <img alt="Issue Stats" width="400" src="https://github.com/SHISME/react-native-draggable-grid/blob/master/example2.gif?raw=true">
+</p>
+
 
 ## Custom Drag Start Animation
 
